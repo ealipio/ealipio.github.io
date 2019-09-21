@@ -1,6 +1,6 @@
-// import Header from '../src/components/Header';
+import Menu from '../src/components/Menu';
 
-import { Card, Layout, Menu, Col, Row } from 'antd';
+import { Avatar, Card, Descriptions, Icon, Layout, Col, Row } from 'antd';
 import './index.less';
 
 const Index = () => (
@@ -10,27 +10,52 @@ const Index = () => (
         <Card>
           <p className="title">Eisson Alipio</p>
           <span className="subtitle">Software Developer</span>
-          <Menu
-            className="menu-container"
-            selectedKeys={['/about']}
-            mode="horizontal"
-          >
-            <Menu.Item key="about" className="menu-item">
-              About
-            </Menu.Item>
-            <Menu.Item key="skills" className="menu-item">
-              Skills
-            </Menu.Item>
-            <Menu.Item key="experience" className="menu-item">
-              Experience
-            </Menu.Item>
-            <Menu.Item key="education" className="menu-item">
-              Education
-            </Menu.Item>
-            <Menu.Item key="contact" className="menu-item">
-              Contact
-            </Menu.Item>
-          </Menu>
+          <Menu />
+        </Card>
+      </Col>
+    </Row>
+
+    <Row>
+      <Col xs={24} sm={24} md={24} lg={24} xl={24}>
+        <Card>
+          <div className="item-title">
+            <span className="item-content">About Me</span>
+          </div>
+        </Card>
+      </Col>
+    </Row>
+
+    <Row>
+      <Col xs={24} sm={24} md={8} lg={8} xl={8}>
+        <Card>
+          <Descriptions layout="vertical">
+            <Descriptions.Item label="Web">ealipio.dev</Descriptions.Item>
+            <Descriptions.Item label="skype">eisson.alipio</Descriptions.Item>
+            <Descriptions.Item label="Phone">+51983516088</Descriptions.Item>
+          </Descriptions>
+          <div className="about-media">
+            <a href="" target="_blank" className='media-item'>
+              <Icon type="github" />
+            </a>
+            <a href="" target="_blank" className='media-item'>
+              <Icon type="linkedin" />
+            </a>
+            <a href="" target="_blank" className='media-item'>
+              <Icon type="skype" />
+            </a>
+            <a href="" target="_blank" className='media-item'>
+              <Icon type="twitter" />
+            </a>
+          </div>
+        </Card>
+      </Col>
+      <Col xs={24} sm={24} md={16} lg={16} xl={16}>
+        <Card>
+          <Avatar
+            size={'large'}
+            src="static/ealipio.jpeg"
+            style={{ width: '150px', height: '150px' }}
+          />
         </Card>
       </Col>
     </Row>

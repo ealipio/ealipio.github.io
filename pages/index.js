@@ -8,7 +8,7 @@ const Index = () => (
   <Layout>
     <Row>
       <Col xs={24} sm={24} md={24} lg={24} xl={24}>
-        <Card>
+        <Card bordered={false}>
           <p className="title">Eisson Alipio</p>
           <span className="subtitle">Software Developer</span>
           <Menu />
@@ -18,7 +18,7 @@ const Index = () => (
 
     <Row>
       <Col xs={24} sm={24} md={24} lg={24} xl={24}>
-        <Card>
+        <Card bordered={false}>
           <Arrow text="About Me" />
         </Card>
       </Col>
@@ -26,7 +26,7 @@ const Index = () => (
 
     <Row>
       <Col xs={24} sm={24} md={12} lg={12} xl={4}>
-        <Card>
+        <Card bordered={false}>
           <ul className="about-list">
             <li>
               <span className="about-item">Web</span> ealipio.dev
@@ -65,7 +65,7 @@ const Index = () => (
         </Card>
       </Col>
       <Col xs={24} sm={24} md={12} lg={12} xl={4}>
-        <Card style={{textAlign:'center'}}>
+        <Card bordered={false} style={{textAlign:'center'}}>
           <Avatar
             size={'large'}
             src="static/ealipio.jpeg"
@@ -74,7 +74,7 @@ const Index = () => (
         </Card>
       </Col>
       <Col xs={24} sm={24} md={24} lg={24} xl={16}>
-        <Card>
+        <Card bordered={false}>
           <div className='about-description'>
             <p>
               Software developer with more than 8 years of experience in
@@ -93,7 +93,7 @@ const Index = () => (
 
     <Row>
       <Col xs={24} sm={24} md={24} lg={24} xl={24}>
-        <Card>
+        <Card bordered={false}>
           <Arrow text="Skills" />
         </Card>
       </Col>

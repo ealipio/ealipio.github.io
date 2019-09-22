@@ -10,6 +10,7 @@ class MyApp extends App {
       <React.Fragment>
         <Head>
           <title>Fullstack Developer</title>
+          <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet" />
         </Head>
         <Component {...pageProps} />
       </React.Fragment>
